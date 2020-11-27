@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,700,900&display=swap');
+:root {
+    --orange: #f49c42;
+    /*244, 156, 66*/
+    --pink: #750000;
+    /*    pink  #e04067;*/
+    --transition: .4s ease;
+    --text: #222;
+    --white: #fff;
+    --text-shadow: 2px 2px 0px gray;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+.btn {
+    background: var(--pink);
+    border-radius: 0;
+    padding: 10px 20px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.btn:hover {
+    background: var(--pink);
+    color: var(--white);
+}
+.py-5 {
+    padding: 100px 0 !important;
+}
+/*************
+nav
+*************/
+.navigacija {
+    background: var(--orange);
+}
+.navigacija .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-left: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+}
+.navigacija .navbar-brand:hover {
+    color: var(--pink);
+    transition: var(--transition);
+}
+.navigacija .list-unstyled {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.navigacija .list-unstyled li a {
+    color: var(--white);
+    margin-right: 30px;
+    font-size: 1.2rem;
+}
+.navigacija .list-unstyled li a:hover {
+    color: var(--pink);
+    transition: var(--transition);
+}
+.nav-link {
+    color: var(--white) !important;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    text-shadow: var(--text-shadow);
+    font-size: 1.2rem;
+}
+.nav-link:hover {
+    color: var(--pink) !important;
+    transition: var(--transition);
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: var(--pink) !important;
+}
+/*************
+slider
+*************/
+.carousel-caption {
+    padding: 30px;
+    background: linear-gradient(rgba(244, 156, 66, .7), rgba(244, 156, 66, .7));
+}
+.carousel-caption h5 {
+    color: var(--pink);
+    font-size: 2rem;
+}
+.carousel-caption .lead {
+    color: var(--white);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+}
+.carousel-caption p {
+    color: var(--white);
+}
+/*************
+about
+*************/
+.about h5,
+.about h3 {
+    color: var(--pink);
+}
+/*************
+allFruits
+*************/
+.allFruits {
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(img/fruits.png);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    background-attachment: fixed;
+}
+/*************
+beactive
+*************/
+.beactive {
+    background: #F5F5EE;
+}
+.beactive h2 {
+    color: var(--pink);
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.beactive h4 {
+    color: var(--white);
+    background: var(--pink);
+    padding: 5px;
+}
+.beactive .fas {
+    color: var(--pink);
+    padding-top: 40px;
+}
+/*************
+footer
+*************/
+footer {
+    background: var(--pink);
+}
+footer a {
+    color: var(--white);
+}
+footer a:hover {
+    color: var(--text);
+    transition: var(--transition);
+}
+
+/**********
+recipes-page
+************/
+.recipes {
+    background: #F5F5EE;
+}
+.recipes .row .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.recipes .row .col-md-6 img {
+    width: 100%;
+}
+.recipes .row .col-md-6 h2 {
+    color: var(--pink);
+    font-weight: 700;
+}
+
+.order{
+        background: #F5F5EE;
+}
